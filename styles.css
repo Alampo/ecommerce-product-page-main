@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: Kumbh Sans;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+    margin: 0 20px;
+    color: hsl(220, 14%, 75%);
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding-right: 20px;
+}
+nav .avatar {
+    display: flex;
+}
+
+nav .avatar img {
+    width: 50%;  
+    height: 40px; 
+    padding: 10px;
+     }
+    hr{
+        color: hsl(220, 14%, 75%);
+        margin: 0 30px;
+    }
+     .container{
+        display: flex;
+        margin-left: 20px;
+        padding: 15px;
+        height: 700px;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .container .box-1{
+        width: 550px;
+        padding: 20px;
+     }
+
+      .product-img img{
+        width: 420px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        border-radius: 20px;
+        height: 380px;
+     }
+
+     
+     .container .img-thumb img{
+        margin: 10px 28px;
+        width: 60px;  
+        border-radius: 10px;             
+     }
+
+     .container .box-2{
+        align-items: center;
+        text-align: left;
+        width: 430px;
+     }
+     .container .box-2 .header{
+        margin-bottom: 10px;
+             }
+
+             .box-2 .header h2{
+                color: hsl(26, 100%, 55%);
+                font-weight: 400;
+                font-size: 14px;
+                margin-bottom: 20px;
+             }
+             .box-2 .header h1{
+                font-weight: 700;
+
+             }
+              .info{
+                padding: 15px 0;
+                
+                font-weight: 300;
+                color:  hsl(220, 14%, 75%);
+             }
+              span{
+                
+                color: hsl(26, 100%, 55%);
+                background-color: hsl(223, 64%, 98%);
+                font-size: 14px;
+                padding: 4px;
+             }
+             .price p{
+                
+                font-size: 13px;
+                color: hsl(220, 14%, 75%);
+                margin-top: 15px;
+             }
+             .purchase{
+                margin-top: 20px;
+                display: flex;
+                
+             }
+                
+                .purchase .add  {
+                    display: flex;
+                    width: 100px;
+                    background-color: hsl(223, 64%, 98%);
+                    margin-left: 6px;
+                
+                }
+                .purchase .add p{
+                    margin-top: 9px;
+                }
+                .purchase .add img{
+                    padding: 15px;
+                    height: auto;
+                }
+                button{
+                    margin-left: 50px;
+                    background-color: hsl(26, 100%, 55%) ;
+                    color: hsl(25, 100%, 94%);
+                    width: 50%;
+                    border: none;
+                    padding: 8px;
+                    border-radius: 12px;
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: hsl(25, 100%, 94%);
+                    color: hsl(26, 100%, 55%);
+                }
+
+                @media screen and  (max-width: 900px) {
+                    nav{
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                    }
+                    nav .logo{
+                        margin-right: 70%;
+                    }
+                    nav .avatar{
+                        flex-wrap: nowrap;
+                        margin-left: 60%;
+                    }
+                    nav ul{
+                        flex-wrap: wrap;
+                        flex-direction: column;
+                        margin-right: 70%;
+                    }
+
+                    .container{
+                        flex-wrap: wrap;
+                    }
+                    .container .box-1 {
+
+                        width: 80%;
+                    }
+                    .product-img img{
+                        width: 65%;
+                        height: 50%;
+                    }
+                   
+                    
+
+                }
+                @media screen and (max-width: 350px) {
+                    .container .img-thumb img{
+                        width: 60%;
+                    }
+                    .purchase{
+                        margin-bottom: 30px;
+                    }
+                    .attribution{
+                        position: fixed;
+                        bottom: 0;
+                    }
+                }
+
